@@ -23,3 +23,74 @@ body {
   color: var(--primary-color);
   transition: var(--transition);
 }
+
+/* Header */
+header {
+  background-color: var(--bg-dark);
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav a {
+  color: var(--light-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Buscador */
+.search {
+  max-width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.search input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+/* Grid de películas */
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie-card {
+  background: var(--bg-dark);
+  color: var(--light-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .movies {
+    grid-template-columns: 1fr;
+  }
+}
