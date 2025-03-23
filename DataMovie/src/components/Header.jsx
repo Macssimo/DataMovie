@@ -6,7 +6,7 @@ const Header = ({ toggleTheme, theme }) => {
     <header>
       <nav>
         <Link to="/">
-          <FaFilm /> MovieApp
+          <FaFilm /> DataMovie
         </Link>
         <div>
           <Link to="/">
