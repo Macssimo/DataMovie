@@ -7,7 +7,6 @@ const MovieCard = ({ movie }) => {
   return (
     <article className="movie-card">
       <Link to={`/movie/${movie.imdbID}`} className="card-link">
-        {/* Contenedor de la imagen */}
         <div className="image-container">
           {movie.Poster !== 'N/A' ? (
             <img 
@@ -23,7 +22,6 @@ const MovieCard = ({ movie }) => {
           )}
         </div>
 
-        {/* Contenedor del contenido textual */}
         <div className="text-container">
           <h3 className="card-title">{movie.Title}</h3>
           
