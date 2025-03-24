@@ -9,9 +9,6 @@ const Header = ({ toggleTheme, theme }) => {
           <FaFilm /> DataMovie
         </Link>
         <div>
-          <Link to="/">
-            <FaSearch /> Buscar
-          </Link>
           <button onClick={toggleTheme}>
             {theme === "light" ? <FaMoon /> : <FaSun />}
           </button>
